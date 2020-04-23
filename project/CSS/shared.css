@@ -73,10 +73,11 @@ section {
     margin-top: 50px;
 }
 
-.navbar {
+.menu {
     height: 105px;
     max-height: 340px;
     display: block;
+    z-index: 100%;
 }
 
 .container {
@@ -98,9 +99,9 @@ section {
     margin-left: -15px;
 }
 
-.clearfix::after,
-.container::after,
-.navbar::after {
+.clearfix:after,
+.container:after,
+.navbar:after {
     clear: both;
     display: table;
     content: "";

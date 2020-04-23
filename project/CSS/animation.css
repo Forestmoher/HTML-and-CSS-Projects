@@ -11,6 +11,7 @@ Menu section animation
     padding: 0;
     list-style: none;
     text-decoration: none;
+    z-index: 100%;
 }
 
 .menu li {
@@ -28,6 +29,7 @@ Menu section animation
     transition-duration: .4s;
     transition-delay: 0s;
     transition-timing-function: ease-in-out;
+    z-index: 100%;
 }
 
 .menu li:hover {
