@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/one-page-website.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Home-->
+    <div id="home">
+        <div class="title">
+            <div class="videoContainer">
+                <h1>&#128613; the new butter &#128614;</h1>
+                <video autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="media/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!--main content-->
+    <div class="shell">
+        <!--navbar-->
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!--about-->
+        <div class="aboutBack">
+            <h3>About</h3>
+            <p>The New Butter is a pop up dinning experience. <br>Join Chef Forest Moher and our wonderful staff as we
+                host a night you won't soon forget.<br>
+                Each event is catered to your exact needs and can even take place in your own home or event space.<br>
+                Contact us below to start planning you event today!</p>
+        </div>
+        <!--images-->
+        <div class="imageTable">
+            <table id="gallery">
+                <tr>
+                    <td><img src="images/thumb_9.jpg" alt="" onclick="openModal();currentSlide(1)"></td>
+                    <td><img src="images/thumb_3.jpg" alt="" onclick="openModal();currentSlide(2)"></td>
+                    <td><img src="images/thumb_6.jpg" alt="" onclick="openModal();currentSlide(3)"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/thumb_8.jpg" alt="" onclick="openModal();currentSlide(4)"></td>
+                    <td><img src="images/thumb_7.jpg" alt="" onclick="openModal();currentSlide(5)"></td>
+                    <td><img src="images/thumb_2.jpg" alt="" onclick="openModal();currentSlide(6)"></td>
+                </tr>
+            </table>
+        </div>
+        <!--modal-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+            <div class="modalContent">
+
+                <div class="slide">
+                    <img id="image" src="images/thumb_9.jpg" alt="Braised beef in tomato broth">
+                </div>
+
+                <div class="slide">
+                    <img id="image" src="images/thumb_3.jpg" alt="Pork cheeks with white beans and apple">
+                </div>
+
+                <div class="slide">
+                    <img id="image" src="images/thumb_6.jpg" alt="Black Cod with red pepper gazpacho">
+                </div>
+
+                <div class="slide">
+                    <img id="image" src="images/thumb_8.jpg" alt="Roasted lamb rack with deviled yams">
+                </div>
+
+                <div class="slide">
+                    <img id="image" src="images/thumb_7.jpg" alt="Asperagus crepes with cauliflower puree">
+                </div>
+
+                <div class="slide">
+                    <img id="image" src="images/thumb_2.jpg" alt="White chocolate panna cotta and almond cookies">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="captionContainer">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/thumb_9.jpg" onclick="currentSlide(1)"
+                        alt="Braised beef in tomato broth">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb_3.jpg" onclick="currentSlide(2)"
+                        alt="Pork cheeks with white beans and apple">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb_6.jpg" onclick="currentSlide(3)"
+                        alt="Black Cod with red pepper gazpacho">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb_8.jpg" onclick="currentSlide(4)"
+                        alt="Roasted lamb rack with deviled yams">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb_7.jpg" onclick="currentSlide(5)"
+                        alt="Asperagus crepes with cauliflower puree">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb_2.jpg" onclick="currentSlide(6)"
+                        alt="White chocolate panna cotta and almond cookies">
+                </div>
+
+            </div>
+
+        </div>
+        <!--contact-->
+        <div class="formBack">
+            <form id="contact">
+                <h2>Please contact me to set up an event today!</h2>
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="Email"><br>
+                <input type="text" placeholder="Phone Number"><br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+    <script src="JS/one_page_website.js"></script>
+</body>
+
+</html>

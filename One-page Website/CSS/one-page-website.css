@@ -1,37 +1,263 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    z-index: -100;
 }
 
-form {
-    padding: 5px 20px;
+p {
+    font-family: 'Raleway';
+    font-size: 25px;
+    text-align: center;
+}
+
+.shell {
+    width: 90%;
+    height: 2000px;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    background: rgba(0,0,0,.3);
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px rgba(0,0,0,.2);
+    border: .5px solid rgba(0,0,0,.05);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    opacity: .8;
+}
+
+.videoContainer {
+    width: 1000px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+h1 {
+    position: absolute;
+    top:0px;
+    left:62px;
+    padding-bottom: 60px;
+    font-size: 115px;
+    color: goldenrod;
+    z-index: 2;
+    font-family: 'Dancing Script', cursive;
+}
+
+h3{
+    text-align: center;
+    font-size: 100px;
+    color: goldenrod;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    margin-top: 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    text-align: center;
+    
+}
+
+.aboutBack {
+    padding-top: 2px;
+    margin: 0px auto;
+    margin-bottom: 45px;
+    width: 75%;
+    height: 400px;
+    background-color: #26314e54;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+a {
+    text-decoration:none;
+    font-variant: small-caps;
+    font-size: 40px;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin-top: 25px;
+    
+    
+}
+
+a:hover {
+    background-color: rgba(185, 152, 106, 1);
+    color: black;
+    box-shadow: 5px 5px 20px rgba(78, 61, 22, 0.596) inset;
+}
+
+.imageTable {
+    background-color: #26314e54;
+    width: 75%;
+    margin-top: 50px;
+    margin: 0px auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+table {
     margin: 0px auto;
 }
 
-form input {
-    width: 80%;
-    margin: 1px 20px 5px 20px;
-    border: 2px solid blanchedalmond;
-    border-radius: 8px;
+td {
+    padding: 10px 10px;
+    cursor: pointer;
 }
 
-form input[type="submit"] {
-    width: 25%;
-    border: 2px solid black;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px;
-    margin: 2px 20px 0px 20px;
+img:hover {
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.479);
+    transform: scale(1.05);
+    transition-timing-function: ease-in-out;
+    transition: .5s; 
 }
 
-#form-background {
-    background: peachpuff;
-    border: 1px solid black;
-    width: 27%;
-    border-radius: 10;
-    box-shadow: 1px 2px 10px 0 rbga(0,0,0,0.5);
-    margin: 0% auto;
+.formBack {
+    margin: 0px auto;
+    width: 75%;
+    margin-top: 50px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #26314e54;
+    border-radius: 0px 0px 10px 10px;
+
 }
 
-h2 {
+form {
+    margin: 0px auto;
+    width: 40%
+}
+
+form h2 {
+    font-family: 'Raleway';
     text-align: center;
+}
+
+
+form input {
+    margin-top:10px;
+    margin-left: 30%;
+    width: 40%;
+    padding-top: 5px;
+    font-family: 'Raleway';
+}
+
+input[type=submit] {
+    font-family: 'Dancing Script';
+    border-radius: 5px;
+
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: rgb(218, 179, 125);
+    border-color: rgba(218, 179, 125);
+    box-shadow: inset 3px 3px 3px rgba(185, 152, 106, 1);
+}
+
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: rgb(218, 179, 125);
+    cursor: pointer;
+}
+
+.modalContent {
+    position: relative;
+    margin: 0px auto;
+    width: 90%;
+
+}
+.slide img {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.column {
+    float: left;
+    width: 220px;
+    height: 165px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.captionContainer {
+    color: white;
+    text-align: center;
+}
+
+.demo {
+    opacity: .6;
+}
+.active {
+    opacity: 1;
 }
